@@ -1,7 +1,8 @@
 {
    "if": {
       "not": {
-         "field": "[concat('tags[', parameters('tagName'), ']')]"
+         "field": "[concat('tags[', parameters('tagName'), ']')]",
+         "exists": "true"
       }
    },
    "then": {
